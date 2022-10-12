@@ -4,5 +4,5 @@
         $obj = new promotion(NULL, $_POST["nom"]);
         $obj->insert();
     }
-    header("location: ../presentation/index.php")
+    header("location: ../presentation/index.php");
 ?>
