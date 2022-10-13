@@ -1,52 +1,72 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.cont{
+
+.cont {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
-.input_div{
+
+.input_div {
     display: flex;
     padding: 20px 0;
     justify-content: space-around;
     font-size: 30px;
     width: 70%;
 }
-.input_div a{
+
+.input_div a {
     padding: 10px 20px;
     background-color: #3eade7;
     color: rgb(45, 45, 45);
     text-decoration: none;
 }
-.input_div input{
+
+.input_div input,
+.form_div input {
     padding: 10px 20px;
     background-color: #f2f6f8;
     color: rgb(45, 45, 45);
     font-size: 20px;
     border: solid 1px rgb(170, 170, 170);
 }
-.data_div{
+.form_div {
+    font-size: 25px;
+}
+.form_div input[name="nom"]{
+    background-color: transparent;
+}
+.form_div input[name="update_prom"]{
+    color: rgb(0, 104, 0);
+    cursor: pointer;
+}
+
+.data_div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 60%;
     font-size: 30px;
 }
-.data{
+
+.data {
     display: flex;
     width: 100%;
 }
-.data div{
+
+.data div {
     display: flex;
     width: 33.33%;
 }
-.edit_btn a{
+
+.edit_btn a {
     color: rgb(0, 112, 0);
 }
-.delete_btn a{
+
+.delete_btn a {
     color: rgb(158, 0, 0);
 }
