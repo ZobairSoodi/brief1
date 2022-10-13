@@ -1,4 +1,5 @@
-<?php include '../data-access/promotionClass.php'; ?>
+<?php include '../data-access/promotionManager.php'; ?>
+<?php include '../data-access/promotion.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,8 +19,10 @@
         </div>
         <div class="data_div">
             <?php
-            $obj = new promotion("", "");
-            $select = $obj->search();
+            $obj = new PromotionManager();
+            $prom = new promotion();
+            $prom->set_nom("");
+            $select = $obj->search($prom);
             if (count($select) > 0) {
                 for ($i = 0; $i < count($select); $i++) {
             ?>

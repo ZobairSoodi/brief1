@@ -1,4 +1,4 @@
-<?php include '../data-access/conn.php' ?>
+<?php include '../data-access/promotionManager.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
